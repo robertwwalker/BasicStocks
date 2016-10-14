@@ -7,6 +7,7 @@ pkgTest <- function(x)
     }
   }
 pkgTest("fImport")
+pkgTest("RcmdrPlugin.HH")
 DL.Cleaner <- function(ticker) {
   Eq.Data <- yahooSeries(ticker, from="2016-07-01", to="2016-10-13", frequency="daily")
   Eq.Data.S <- Eq.Data[,6]
