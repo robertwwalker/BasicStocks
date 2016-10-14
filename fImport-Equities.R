@@ -8,7 +8,7 @@ pkgTest <- function(x)
   }
 pkgTest("fImport")
 DL.Cleaner <- function(ticker) {
-  Eq.Data <- yahooSeries(ticker, from="2015-08-01", to="2015-10-30", frequency="daily")
+  Eq.Data <- yahooSeries(ticker, from="2016-07-01", to="2016-10-13", frequency="daily")
   Eq.Data.S <- Eq.Data[,6]
   Equities.Data.1 <- (Eq.Data.S-lag(Eq.Data.S,1))/lag(Eq.Data.S,1)
   Daily.Ret.Adj.Close <- na.omit(as.data.frame(Equities.Data.1))
